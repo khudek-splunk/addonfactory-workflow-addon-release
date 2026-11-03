@@ -1052,7 +1052,7 @@ jobs:
       - name: Build Package
         id: uccgen
         run: |
-          "${UCC_GEN:-ucc-gen}" build --pip-version 26.2.2 --ta-version ${{ steps.BuildVersion.outputs.VERSION }}
+          "${UCC_GEN:-ucc-gen}" build --pip-version 26.0.1 --ta-version ${{ steps.BuildVersion.outputs.VERSION }}
           if [ -f package.json ]
           then
             yarn
